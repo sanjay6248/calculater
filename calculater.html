@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+    <style>
+       body{
+        background-image: url(image/Ai.jpg);
+        background-size: cover;
+       }
+        .calculater{
+            background-color:rgb(32, 32, 32);
+            padding:10px;
+           margin:50px 500px;
+           width:240px;
+           height:500px;
+           border:1px solid rgb(0, 0, 0);
+           border-radius:25px;
+           display:flex;
+           flex-wrap: wrap;
+           /* backdrop-filter:300px blur(300px); */
+           /* justify-content: center; */
+        }
+        .setting{
+            background-color: rgb(58, 58, 59);
+            border-radius:16px;
+            border:0px;
+            height:40px;
+            width: 40px;
+        }
+        input {
+            color:white;
+            background-color:rgb(32, 32, 32);
+            font-size:50px;
+            margin:auto;
+            border:none;
+            width:240px;
+            height:90px;
+        }
+        .button-box{
+            color:rgb(216, 216, 216);
+            background-color: rgb(68, 69, 80);
+            margin:5px;
+            border-radius:30px;
+            backdrop-filter:white(100px);
+            border:0px;
+            height:50px;
+            width:50px;
+            font-size:30px;
+            text-align:center;
+        }
+        .box-color-white{
+            background-color: rgb(172, 172, 172);
+            color:black;
+        }
+        .box-color-orange{
+            border:0px;
+            background-color:rgb(172, 101, 50);
+        }
+        .box-number0{
+            width:110px;
+        }
+    </style>
+</head>
+<body>
+    <div class ="calculater">
+        <button class="setting"></button>
+        <div class="add"><input type="text" id="display" readonly></div>
+        
+        <button class="button-box box-color-white" onclick="
+        displayValue = '' ;
+        document.querySelector('#display').value =displayValue;
+        ">AC</button>
+        <button class="button-box box-color-white" onclick="
+        displayValue ='';
+        document.querySelector('#display').value =displayValue;
+        ">C</button>
+        <button class="button-box box-color-white" onclick="
+        displayValue = displayValue + '%' ;
+        document.querySelector('#display').value =displayValue;
+        ">%</button>
+        <button class="button-box box-color-orange" onclick="
+        displayValue = displayValue + '/' ;
+        document.querySelector('#display').value =displayValue;
+        ">/</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 1 ;
+        document.querySelector('#display').value =displayValue;
+        ">1</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 2 ;
+        document.querySelector('#display').value =displayValue;
+        ">2</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 3 ;
+        document.querySelector('#display').value =displayValue;
+        ">3</button>
+        <button class="button-box box-color-orange" onclick="
+        displayValue = displayValue + '*' ;
+        document.querySelector('#display').value =displayValue;
+        ">*</button>
+        <button class="button-box" 
+        onclick="
+        displayValue = displayValue + 4 ;
+        document.querySelector('#display').value =displayValue;
+        ">4</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 5 ;
+        document.querySelector('#display').value =displayValue;
+        ">5</button>
+        <button class="button-box"onclick="
+        displayValue = displayValue + 6 ;
+        document.querySelector('#display').value =displayValue;
+        ">6</button>
+        <button class="button-box box-color-orange" onclick="
+        displayValue = displayValue + '-' ;
+        document.querySelector('#display').value =displayValue;
+        ">-</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 7 ;
+        document.querySelector('#display').value =displayValue;
+        ">7</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 8 ;
+        document.querySelector('#display').value =displayValue;
+        ">8</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + 9 ;
+        document.querySelector('#display').value =displayValue;
+        ">9</button>
+        <button class="button-box box-color-orange" onclick="
+        displayValue = displayValue + '+' ;
+        document.querySelector('#display').value =displayValue;
+        ">+</button>
+        <button class="button-box box-number0" onclick="
+        displayValue = displayValue + '0' ;
+        document.querySelector('#display').value =displayValue;
+        ">0</button>
+        <button class="button-box" onclick="
+        displayValue = displayValue + '.' ;
+        document.querySelector('#display').value =displayValue;
+        ">.</button>
+        <button class="button-box box-color-orange" onclick="
+        displayValue = eval(displayValue);
+        document.querySelector('#display').value =displayValue;
+        ">=</button>
+    </div>
+   <!-- <main>
+    <button onclick=" 
+        alert('hello world'); 
+        " href="">hello</button>
+   </main> -->
+   
+   <script type="text/javascript">
+   
+   let displayValue = "";
+   document.querySelector('#display').value =displayValue;
+   
+   </script>
+</body>
+</html>
